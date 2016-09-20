@@ -1,0 +1,17 @@
+<ul class="media list">
+  {{{medialist}}}
+</ul>
+<div class="switch-page">
+  {{#can_go_prev}}
+  <a class="enabled" href="{{prev_page_url}}" title="Go to page {{prev_page}}">Prev</a>
+  {{/can_go_prev}}
+  {{^can_go_prev}}
+  <a class="disabled" title="This is the first page">Prev</a>
+  {{/can_go_prev}}
+  {{#can_go_next}}
+  <a class="enabled" href="{{next_page_url}}" title="Go to page {{next_page}}">Next</a>
+  {{/can_go_next}}
+  {{^can_go_next}}
+  <a class="disabled" title="This is the last page">Next</a>
+  {{/can_go_next}}
+</div>
